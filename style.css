@@ -1,0 +1,85 @@
+    .mainform {
+        margin-top: 200px;
+        margin-left: 550px;
+        font-family: 'Source Sans Pro', sans-serif;
+        margin-right: 550px;
+    }
+
+    .inputfield {
+        position: relative;
+        width: 250px;
+        height: 44px;
+        line-height: 44px;
+    }
+
+    label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        color: #999999;
+        transition: 0.2s ;
+        cursor: text;
+    }
+
+    .star {
+        color: #FF4400;
+    }
+
+    .example {
+        position: relative;
+        color: #BBBBBB;
+        top: -15px;
+        font-size: small;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        border: 0;
+        outline: 0;
+        padding: 0.5rem 0;
+        border-bottom: 2px solid #DDDDDD;
+        box-shadow: none;
+        color: #000000;
+    }
+
+    input[type="text"]:invalid {
+        outline: 0;
+    }
+
+    input[type="text"]:focus, input[type="text"]:valid {
+        border-color: #339933;
+    }
+
+    input[type="text"]:focus~label, input[type="text"]:valid~label {
+        font-size: 14px;
+        top: -24px;
+        color: #339933;
+    }
+
+    .radioinput {
+        cursor: context-menu;
+    }
+
+    .radiofield {
+        margin-top: -15px;
+    }
+
+    h4 {
+       padding-top: 20px;
+       color: #777777;;
+    }
+
+    .radiolabel {
+        display: inline;
+        position: relative;
+    }
+
+
+    input[type=radio]:focus + .radiolabel  {
+        color: #000000;
+    }
+    
+ 
+
+    
