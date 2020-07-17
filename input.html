@@ -1,25 +1,52 @@
 <!DOCTYPE html>
 <html> 
-    <header>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-    </header>
+    </head>
     <body>
-        <div class="mainform">
-            <form>
+        <div>
+            <form class="container">
                 <div class="inputfield">
-                    <input type="text" name="fullname" id="fullname" autocomplete="off" required>
-                    <label for="fullname">NAME<span class="star">*</span></label>
-                    <span class="example">Eg. John Doe</span>
+                    <input type="text" id="fullname" autocomplete="off" name="fullname" required></input>
+                    <label for="fullname" class="inputlabel">NAME<span class="star">*</span></label>
                 </div>
-                <h4>Gender</h4>
-                <div class="radiofield">
-                    <input class="radioinput" type="radio" id="A" name="radioA" value="A">
-                    <label class="radiolabel" for="male">RADIO OPTION A RADIO OPTION A RADIO OPTION A RADIO OPTION A RADIO OPTION A RADIO OPTION A </label>
-                    <input class="radioinput" type="radio" id="B" name="radioB" value="B">
-                    <label class="radiolabel" for="female">RADIO OPTION B RADIO OPTION B RADIO OPTION B RADIO OPTION B RADIO OPTION B RADIO OPTION B</label>
+                <div class="text-example-error">
+                    <span>Eg. John Doe</span>
                 </div>
-                <span class="example">Eg. John Doe</span>
+                <div class="radiotitle">
+                    RADIO TITLE RADIO TITLE RADIO TITLE RADIO TITLE RADIO TITLE RADIO TITLE RADIO TITLE RADIO TITLE
+                </div>
+                <div class="radiorow1">
+                        <input class="radioinput" type="radio" id="A" name="radio" value="A">
+                        <label class="radiolabel" for="A">RADIO OPTION A RADIO OPTION A RADIO OPTION A</label>
+                </div>
+                <div class="radiorow2">
+                        <input class="radioinput" type="radio" id="B" name="radio" value="B">
+                        <label class="radiolabel" for="B">RADIO OPTION B RADIO OPTION B RADIO OPTION B</label>
+                </div>
+                <div class ="radio-example-error">
+                    <span>Choose the best option</span>
+                </div>
+                <div class="checkboxtitle">
+                    CHECK BOX TITLE CHECK BOX TITLE CHECK BOX TITLE CHECK BOX TITLE CHECK BOX TITLE CHECK BOX TITLE
+
+                </div>
+                <div class="checkboxrow1">
+                        <input class="checkboxinput" type="checkbox" id="A" name="checkbox" value="A">
+                        <label class="checkboxlabel" for="A">CHECK BOX OPTION A CHECK BOX OPTION A CHECK BOX OPTION A CHECK BOX OPTION A</label>
+                </div>
+                <div class="checkboxrow2">
+                        <input class="checkboxinput" type="checkbox" id="B" name="checkbox" value="B">
+                        <label class="checkboxlabel" for="B">CHECK BOX OPTION B CHECK BOX OPTION B CHECK BOX OPTION B CHECK BOX OPTION B</label>
+                </div>
+                <div class ="checkbox-example-error">
+                    <span>Choose the best option</span>
+                </div>
+                <div>
+                    <input type="submit" value="SUBMIT" class="submit"/>
+                </div>
             </form>
         </div>
     </body>
